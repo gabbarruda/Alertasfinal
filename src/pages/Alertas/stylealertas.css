@@ -1,0 +1,128 @@
+.cards {
+  width: 100%;
+    padding: 35px 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+
+.body::-webkit-scrollbar {
+  display: none;
+}
+
+.Nometabela {
+  color: #2b0707;
+}
+
+.cards .card {
+  padding: 20px;
+
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+  height: 150px;
+  margin-top: 100px;
+  width: 450px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.number {
+  font-size: 50px;
+  font-weight: 500;
+  color: #2b0707;
+
+ 
+  text-align: center;
+  border-radius: 20px;
+}
+
+
+
+  .MainAlertas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+   
+    align-items: center;
+  }
+
+
+.card-name {
+  color: #000000;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2em;
+}
+
+.icon-box i {
+  margin-top: 20px;
+  font-size: 2em;
+  color: #007bff;
+}
+
+.cards .critico  {
+  background-color: #f90000;
+}
+
+
+.cards .urgentes {
+  background-color:#fff702;
+}
+
+
+.cards .normais {
+  background-color: #ff9500;
+}
+
+.mt-5 {
+  margin-top: 3rem!important;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+.mainCards {
+  display: flex;
+  flex-direction: column;
+  padding-right:40px;
+}
+
+
+.img  {
+  display: flex;
+  width: 70px;
+}
+
+
+@media screen and (max-width: 796px) {
+  body {
+      /* width: 100%; */
+      background-size: 100% 70%;
+      /* flex-direction: row-reverse; */
+  }
+
+
+  root {
+    width: 100%;
+    background-size: 100% 70%;
+    flex-direction: row-reverse;
+}
+
+.cards .card {
+    /* width: 100%; */
+    background-size: 100% 70%;
+    /* flex-direction: row-reverse; */
+}
+.cards {
+  flex-direction: column;
+  align-items: center;
+}
+
+
+}
