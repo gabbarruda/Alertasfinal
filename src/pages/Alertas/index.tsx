@@ -8,6 +8,14 @@ import Perfil from "../../components/Perfil";
 
 
 
+import IconeCards1 from "../../assets/img/pie-chart_3579068.png"
+import IconeCards2 from "../../assets/img/pie-chart_4491389.png"
+import IconeContato from "../../assets/img/icon-contact.png"
+import IconeChat from "../../assets/img/icon-chat.png"
+
+
+
+
 function Alertas() {
   const [linhasVisiveis, setLinhasVisiveis] = useState({});
   const [expressao, setExpressao] = useState('');
@@ -70,25 +78,31 @@ function Alertas() {
         <section className="mainCards">
           <div className="cards">
             <div className="card critico" >
+            <img src={ IconeCards1 } alt="Icone de erro" />
               <div className="card-conten">
+              <div className="card-name">Erros Criticos</div>
+
                 <div className="number">{alertasCritico.length}</div> 
-                <div className="card-name">Erros Critico</div>
               </div>
               <div className="icon-box">
+                
                 <i className="fas fa-user-graduate" />
               </div>
             </div>
             <div className="card urgentes">
+            <img src={ IconeCards2 } alt="Icone de erros corrigidos" />
+            <div className="card-name">Erros Sério</div>
               <div className="number">{alertasSerio.length}</div> 
-              <div className="card-name">Erros Sério</div>
               <div className="icon-box">
                 <i className="fas fa-chalkboard-teacher" />
               </div>
             </div>
             <div className="card normais">
+            <img src={ IconeCards1 } alt="Icone de alertas" />
+
               <div className="card-conten">
+              <div className="card-name">Erros Moderados</div>
                 <div className="number">{alertasModerado.length}</div> 
-                <div className="card-name">Erro Moderado</div>
               </div>
               <div className="icon-box">
                 <i className="fas fa-users" />
